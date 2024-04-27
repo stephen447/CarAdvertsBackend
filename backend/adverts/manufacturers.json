@@ -1,0 +1,406 @@
+{
+    "car_manufacturers": [
+      {
+        "rank": 1,
+        "manufacturer": "Ford",
+        "country": "United Kingdom",
+        "number_of_models": 30,
+        "average_customer_rating": 4.2,
+        "electric_vehicle": false
+      },
+      {
+        "rank": 2,
+        "manufacturer": "Volkswagen",
+        "country": "Germany",
+        "number_of_models": 25,
+        "average_customer_rating": 4.5,
+        "electric_vehicle": true
+      },
+      {
+        "rank": 3,
+        "manufacturer": "Vauxhall",
+        "country": "United Kingdom",
+        "number_of_models": 20,
+        "average_customer_rating": 4.0,
+        "electric_vehicle": false
+      },
+      {
+        "rank": 4,
+        "manufacturer": "BMW",
+        "country": "Germany",
+        "number_of_models": 18,
+        "average_customer_rating": 4.7,
+        "electric_vehicle": true
+      },
+      {
+        "rank": 5,
+        "manufacturer": "Mercedes-Benz",
+        "country": "Germany",
+        "number_of_models": 22,
+        "average_customer_rating": 4.6,
+        "electric_vehicle": true
+      },
+      {
+        "rank": 6,
+        "manufacturer": "Audi",
+        "country": "Germany",
+        "number_of_models": 15,
+        "average_customer_rating": 4.4,
+        "electric_vehicle": true
+      },
+      {
+        "rank": 7,
+        "manufacturer": "Toyota",
+        "country": "Japan",
+        "number_of_models": 28,
+        "average_customer_rating": 4.3,
+        "electric_vehicle": true
+      },
+      {
+        "rank": 8,
+        "manufacturer": "Nissan",
+        "country": "Japan",
+        "number_of_models": 20,
+        "average_customer_rating": 4.1,
+        "electric_vehicle": true
+      },
+      {
+        "rank": 9,
+        "manufacturer": "Honda",
+        "country": "Japan",
+        "number_of_models": 15,
+        "average_customer_rating": 4.0,
+        "electric_vehicle": false
+      },
+      {
+        "rank": 10,
+        "manufacturer": "Hyundai",
+        "country": "South Korea",
+        "number_of_models": 23,
+        "average_customer_rating": 4.5,
+        "electric_vehicle": true
+      },
+      {
+        "rank": 11,
+        "manufacturer": "Kia",
+        "country": "South Korea",
+        "number_of_models": 18,
+        "average_customer_rating": 4.2,
+        "electric_vehicle": true
+      },
+      {
+        "rank": 12,
+        "manufacturer": "Peugeot",
+        "country": "France",
+        "number_of_models": 20,
+        "average_customer_rating": 4.3,
+        "electric_vehicle": true
+      },
+      {
+        "rank": 13,
+        "manufacturer": "Citroën",
+        "country": "France",
+        "number_of_models": 15,
+        "average_customer_rating": 4.0,
+        "electric_vehicle": false
+      },
+      {
+        "rank": 14,
+        "manufacturer": "Renault",
+        "country": "France",
+        "number_of_models": 17,
+        "average_customer_rating": 4.1,
+        "electric_vehicle": true
+      },
+      {
+        "rank": 15,
+        "manufacturer": "Fiat",
+        "country": "Italy",
+        "number_of_models": 12,
+        "average_customer_rating": 3.9,
+        "electric_vehicle": false
+      },
+      {
+        "rank": 16,
+        "manufacturer": "Alfa Romeo",
+        "country": "Italy",
+        "number_of_models": 10,
+        "average_customer_rating": 4.2,
+        "electric_vehicle": false
+      },
+      {
+        "rank": 17,
+        "manufacturer": "Jaguar",
+        "country": "United Kingdom",
+        "number_of_models": 8,
+        "average_customer_rating": 4.5,
+        "electric_vehicle": true
+      },
+      {
+        "rank": 18,
+        "manufacturer": "Land Rover",
+        "country": "United Kingdom",
+        "number_of_models": 10,
+        "average_customer_rating": 4.4,
+        "electric_vehicle": true
+      },
+      {
+        "rank": 19,
+        "manufacturer": "Volvo",
+        "country": "Sweden",
+        "number_of_models": 15,
+        "average_customer_rating": 4.3,
+        "electric_vehicle": true
+      },
+      {
+        "rank": 20,
+        "manufacturer": "Mazda",
+        "country": "Japan",
+        "number_of_models": 12,
+        "average_customer_rating": 4.1,
+        "electric_vehicle": false
+      },
+      {
+        "rank": 21,
+        "manufacturer": "Subaru",
+        "country": "Japan",
+        "number_of_models": 10,
+        "average_customer_rating": 4.1,
+        "electric_vehicle": false
+      },
+      {
+        "rank": 22,
+        "manufacturer": "Mini",
+        "country": "United Kingdom",
+        "number_of_models": 7,
+        "average_customer_rating": 4.2,
+        "electric_vehicle": true
+      },
+      {
+        "rank": 23,
+        "manufacturer": "Lexus",
+        "country": "Japan",
+        "number_of_models": 9,
+        "average_customer_rating": 4.5,
+        "electric_vehicle": true
+      },
+      {
+        "rank": 24,
+        "manufacturer": "Suzuki",
+        "country": "Japan",
+        "number_of_models": 11,
+        "average_customer_rating": 4.0,
+        "electric_vehicle": false
+      },
+      {
+        "rank": 25,
+        "manufacturer": "Porsche",
+        "country": "Germany",
+        "number_of_models": 5,
+        "average_customer_rating": 4.6,
+        "electric_vehicle": true
+      },
+      {
+        "rank": 26,
+        "manufacturer": "Jeep",
+        "country": "United States",
+        "number_of_models": 8,
+        "average_customer_rating": 4.2,
+        "electric_vehicle": false
+      },
+      {
+        "rank": 27,
+        "manufacturer": "Dacia",
+        "country": "Romania",
+        "number_of_models": 6,
+        "average_customer_rating": 3.8,
+        "electric_vehicle": false
+      },
+      {
+        "rank": 28,
+        "manufacturer": "Mitsubishi",
+        "country": "Japan",
+        "number_of_models": 7,
+        "average_customer_rating": 4.0,
+        "electric_vehicle": true
+      },
+      {
+        "rank": 29,
+        "manufacturer": "Infiniti",
+        "country": "Japan",
+        "number_of_models": 4,
+        "average_customer_rating": 3.7,
+        "electric_vehicle": false
+      },
+      {
+        "rank": 30,
+        "manufacturer": "Aston Martin",
+        "country": "United Kingdom",
+        "number_of_models": 6,
+        "average_customer_rating": 4.8,
+        "electric_vehicle": true
+      },
+      {
+        "rank": 31,
+        "manufacturer": "DS Automobiles",
+        "country": "France",
+        "number_of_models": 4,
+        "average_customer_rating": 4.0,
+        "electric_vehicle": true
+      },
+      {
+        "rank": 32,
+        "manufacturer": "Bentley",
+        "country": "United Kingdom",
+        "number_of_models": 3,
+        "average_customer_rating": 4.7,
+        "electric_vehicle": false
+      },
+      {
+        "rank": 33,
+        "manufacturer": "McLaren",
+        "country": "United Kingdom",
+        "number_of_models": 2,
+        "average_customer_rating": 4.9,
+        "electric_vehicle": true
+      },
+      {
+        "rank": 34,
+        "manufacturer": "Lotus",
+        "country": "United Kingdom",
+        "number_of_models": 3,
+        "average_customer_rating": 4.5,
+        "electric_vehicle": true
+      },
+      {
+        "rank": 35,
+        "manufacturer": "Rolls-Royce",
+        "country": "United Kingdom",
+        "number_of_models": 2,
+        "average_customer_rating": 4.8,
+        "electric_vehicle": false
+      },
+      {
+        "rank": 36,
+        "manufacturer": "Tesla",
+        "country": "United States",
+        "number_of_models": 4,
+        "average_customer_rating": 4.9,
+        "electric_vehicle": true
+      },
+      {
+        "rank": 37,
+        "manufacturer": "Ferrari",
+        "country": "Italy",
+        "number_of_models": 2,
+        "average_customer_rating": 4.8,
+        "electric_vehicle": false
+      },
+      {
+        "rank": 38,
+        "manufacturer": "Bugatti",
+        "country": "France",
+        "number_of_models": 1,
+        "average_customer_rating": 4.9,
+        "electric_vehicle": false
+      },
+      {
+        "rank": 39,
+        "manufacturer": "Maserati",
+        "country": "Italy",
+        "number_of_models": 3,
+        "average_customer_rating": 4.2,
+        "electric_vehicle": false
+      },
+      {
+        "rank": 40,
+        "manufacturer": "Lamborghini",
+        "country": "Italy",
+        "number_of_models": 2,
+        "average_customer_rating": 4.7,
+        "electric_vehicle": false
+      },
+      {
+        "rank": 41,
+        "manufacturer": "Genesis",
+        "country": "South Korea",
+        "number_of_models": 1,
+        "average_customer_rating": 4.6,
+        "electric_vehicle": true
+      },
+      {
+        "rank": 42,
+        "manufacturer": "Hummer",
+        "country": "United States",
+        "number_of_models": 1,
+        "average_customer_rating": 4.0,
+        "electric_vehicle": true
+      },
+      {
+        "rank": 43,
+        "manufacturer": "Abarth",
+        "country": "Italy",
+        "number_of_models": 2,
+        "average_customer_rating": 4.1,
+        "electric_vehicle": false
+      },
+      {
+        "rank": 44,
+        "manufacturer": "Koenigsegg",
+        "country": "Sweden",
+        "number_of_models": 1,
+        "average_customer_rating": 4.9,
+        "electric_vehicle": false
+      },
+      {
+        "rank": 45,
+        "manufacturer": "Pagani",
+        "country": "Italy",
+        "number_of_models": 1,
+        "average_customer_rating": 4.8,
+        "electric_vehicle": false
+      },
+      {
+        "rank": 46,
+        "manufacturer": "Rimac",
+        "country": "Croatia",
+        "number_of_models": 1,
+        "average_customer_rating": 4.7,
+        "electric_vehicle": true
+      },
+      {
+        "rank": 47,
+        "manufacturer": "Pininfarina",
+        "country": "Italy",
+        "number_of_models": 1,
+        "average_customer_rating": 4.6,
+        "electric_vehicle": true
+      },
+      {
+        "rank": 48,
+        "manufacturer": "BAC",
+        "country": "United Kingdom",
+        "number_of_models": 1,
+        "average_customer_rating": 4.5,
+        "electric_vehicle": false
+      },
+      {
+        "rank": 49,
+        "manufacturer": "Arrinera",
+        "country": "Poland",
+        "number_of_models": 1,
+        "average_customer_rating": 4.4,
+        "electric_vehicle": false
+      },
+      {
+        "rank": 50,
+        "manufacturer": "Spyker",
+        "country": "Netherlands",
+        "number_of_models": 1,
+        "average_customer_rating": 4.3,
+        "electric_vehicle": false
+      }
+    ]
+  }
+  
+  
