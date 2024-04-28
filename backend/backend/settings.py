@@ -24,7 +24,7 @@ PORT = 8000
 SECRET_KEY = 'django-insecure-2deae0-8tk18w8=&v@vq2&d3q9=!=c_w!#am53fnq5$65qp$#m'
 
 # SECURITY WARNING: don't run with debug turned on in production!
-DEBUG = True
+DEBUG = False
 
 ALLOWED_HOSTS = ["caradvertsbackend.onrender.com"]
 AUTH_USER_MODEL = 'users.CustomUser'
