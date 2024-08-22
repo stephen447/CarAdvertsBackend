@@ -97,7 +97,7 @@ CSRF_COOKIE_DOMAIN = 'localhost'
 DATABASES = {
     'default': dj_database_url.config(
         # Replace this value with your local database's connection string.
-        default='postgres://car_advertising_database_user:wzOq2uwB6QfHV1ZRW2z3Z7X2inV6ABSE@dpg-cnd4do2cn0vc73f55nfg-a.frankfurt-postgres.render.com/car_advertising_database',
+        default='postgresql://messaging_app_sjnq_user:0RFvDOmEXY6dQtGikl3OuB95s3CTc6E0@dpg-cqnosoqj1k6c73aqjp3g-a.frankfurt-postgres.render.com/messaging_app_sjnq',
         conn_max_age=600
     )
 }
