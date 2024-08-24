@@ -16,4 +16,4 @@ class AdvertImageSerializer(serializers.ModelSerializer):
 class FeaturedAdvertSerializer(serializers.ModelSerializer):
     class Meta:
         model = Advert
-        fields = ['id', 'description', 'make', 'model', 'year', 'mileage', 'price', 'fuel_type', 'transmission', 'color', 'condition', 'seller', 'created_at', 'updated_at', 'images']
+        fields = ['id', 'description', 'make', 'model', 'year', 'mileage', 'price', 'fuel_type', 'transmission', 'color', 'condition', 'created_at', 'updated_at', 'images']
