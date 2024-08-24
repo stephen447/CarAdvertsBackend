@@ -22,4 +22,4 @@ sqlparse==0.4.4
 typing_extensions==4.9.0
 urllib3==2.2.0
 virtualenv==20.25.0
-rest_framework_simplejwt==5.3.1
+rest_framework_simplejwt==0.0.2
