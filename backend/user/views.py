@@ -8,6 +8,7 @@ from rest_framework.serializers import ModelSerializer
 from rest_framework_simplejwt.authentication import JWTAuthentication
 from rest_framework.views import APIView
 from rest_framework.permissions import IsAuthenticated
+from django.shortcuts import get_object_or_404
 
 # Serializer for the User model
 class UserSerializer(ModelSerializer):
@@ -49,3 +50,8 @@ class UserView(APIView):
             serializer.save()
             return Response(serializer.data, status=status.HTTP_200_OK)
         return Response(serializer.errors, status=status.HTTP_400_BAD_REQUEST)
+    
+class Seller(APIView):
+    def get(self, request, user_id, *args, **kwargs):  # user_id is captured from the URL
+        user = get_object_or_404(User, pk=user_id)  # Use the captured user_id to fetch the user
+        return Response({"username": user.username, "email": user.email}, status=status.HTTP_200_OK)

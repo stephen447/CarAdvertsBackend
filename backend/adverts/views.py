@@ -32,16 +32,6 @@ class AdvertListView(APIView):
             queryset = queryset.order_by(sortby)
         serializer = AdvertSerializer(queryset, many=True)
         return Response(serializer.data, status=status.HTTP_200_OK)
-
-# class AdvertView(APIView):
-#     def get(self, request, idTest):
-#         advert = get_object_or_404(Advert, pk=idTest)
-#         advertisement_images = AdvertisementImage.objects.filter(advertisement=advert)
-#         image_serializer = AdvertImageSerializer(advertisement_images, many=True)
-#         advert_data = AdvertSerializer(advert).data
-#         advert_data['images'] = image_serializer.data
-#         return Response(advert_data, status=status.HTTP_200_OK)
-    
     from rest_framework import status
 from rest_framework.response import Response
 from rest_framework.views import APIView
@@ -51,33 +41,40 @@ from .models import AdvertisementImage
 class AdvertView(APIView):
     def get(self, request, idTest):
         advert = get_object_or_404(Advert, pk=idTest)
-        advertisement_images = AdvertisementImage.objects.filter(advertisement=advert)
+        print(advert)
+        try:
+            advertisement_images = AdvertisementImage.objects.filter(advertisement=advert)
+            print(advertisement_images)
+        except Exception as e:
+            print("Error getting advertisement images:", e)
+            return Response({"error": str(e)}, status=status.HTTP_400_BAD_REQUEST)
+        #advertisement_images = AdvertisementImage.objects.filter(advertisement=advert)
+        print(advertisement_images)
         image_serializer = AdvertImageSerializer(advertisement_images, many=True)
         advert_data = AdvertSerializer(advert).data
         advert_data['images'] = image_serializer.data
         return Response(advert_data, status=status.HTTP_200_OK)
     
     def post(self, request):
-        print("creating advert")
         # Check if the user is authenticated
         if not request.user.is_authenticated:
             return Response("Unauthorized", status=status.HTTP_401_UNAUTHORIZED)
-        print("authorised")
         # Add the authenticated user to the data to be serialized
-        advert_data = request.data.copy()  # Make a mutable copy of the request data
+        advert_data = {key: value[0] if isinstance(value, list) else value for key, value in request.data.items()}
         advert_data['seller'] = request.user.id  # Assign the user ID to the 'seller' field
 
         # Serialize the data with the user included
         serializer = AdvertSerializer(data=advert_data)
-        
         if serializer.is_valid():
-            print("serializer is valid")
             # Save the Advert instance
-            advert_instance = serializer.save()
-
+            try:
+                advert_instance = serializer.save()
+            except Exception as e:
+                print("Error saving the advert instance:", e)
+                return Response({"error": str(e)}, status=status.HTTP_400_BAD_REQUEST)
+            
             # Handle file uploads
             uploaded_files = request.FILES.getlist('images[]')
-            print("uploaded files", uploaded_files)
             for uploaded_file in uploaded_files:
                 AdvertisementImage.objects.create(advertisement=advert_instance, image_data=uploaded_file.read())
             
